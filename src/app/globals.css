@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --miku-cyan: #39C5BB;
+  --miku-cyan-bright: #56D8CE;
+  --miku-mint: #E0F7F6;
+  --miku-pink: #FF6B9D;
+  --miku-slate: #334155;
+  --miku-mist: #F3F7FA;
+}
+
+body {
+  color: #334155;
+  background-color: #F3F7FA;
+  background-image: radial-gradient(rgba(57, 197, 187, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar styled with Miku Mint/Cyan */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B5EAE6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39C5BB;
+}
+
+::selection {
+  background-color: rgba(57, 197, 187, 0.25);
+  color: #1B6D67;
+}
